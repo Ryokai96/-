@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RightTabWidget</class>
+ <widget class="QTabWidget" name="RightTabWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>256</width>
+    <height>481</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="enterTab">
+   <attribute name="title">
+    <string>录入人脸</string>
+   </attribute>
+   <widget class="QLabel" name="enter_cautionLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(239, 41, 41);</string>
+    </property>
+    <property name="text">
+     <string>注意 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enter_enterPushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>360</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>录入人脸</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="enter_infoGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>251</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>人脸信息</string>
+    </property>
+    <widget class="QLabel" name="enter_nameLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enter_nameLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>151</width>
+       <height>29</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="enter_ageLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>年龄</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="enter_ageLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>90</y>
+       <width>151</width>
+       <height>29</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="enter_sexLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>性别 </string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="enter_sexComboBox">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>140</y>
+       <width>72</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>男</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>女</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="enter_confirmPushButton">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>80</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="enter_reputPushButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>190</y>
+       <width>80</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>重新输入</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="enter_completePushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>400</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>完成录入</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="enter_cautionContentLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(239, 41, 41);</string>
+    </property>
+    <property name="text">
+     <string>    红色矩形框框住人脸时，点击一次录
+入人脸按钮录入有一张照片，同一姓名
+用户有两张以上图片，才可完成录入</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="recTab">
+   <attribute name="title">
+    <string>识别人脸</string>
+   </attribute>
+   <widget class="QLabel" name="rec_nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>姓名</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rec_nameLineEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>151</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(239, 41, 41);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rec_recognitionPushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始识别</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rec_autoRecognitionPushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>210</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>自动识别</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rec_stopAutoRecognitionPushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止自动识别</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="photoTab">
+   <attribute name="title">
+    <string>拍照</string>
+   </attribute>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>251</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>249</width>
+       <height>339</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="photo_sunglassesPushButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>sunglasses</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="photo_suneyePushButton">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>suneye</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="photo_takePushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>380</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>拍照</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
